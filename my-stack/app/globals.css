@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* A life saver code... missing link fror tailwindcss v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  /* background: var(--background);
+  color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .movingGlow {
+  animation: movingGlow 5s infinite;
+}
+
+@keyframes movingGlow {
+  0% {
+    translate: 0;
+  }
+
+  50% {
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: translateX(-1000px);
+  }
+} */
+
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: 50px 50px; /* Size of each grid cell */
+  background-image: 
+    /* Vertical lines */
+    linear-gradient(to right, transparent 1px, transparent 49px, #222 40px), 
+    /* Horizontal lines */
+    linear-gradient(to bottom, transparent 1px, transparent 49px, #222 40px);
+  margin: 0;
+  color: white; /* Optional: For any text inside */
+  font-family: sans-serif;
+}
+
+.big-test {
+  background-image: radial-gradient(circle at center, #ffffff 0%, #333 100%);
+}
+
+.line {
+  background-image: linear-gradient(to right, transparent,  rgb(4, 223, 243), transparent);
+  
+}
