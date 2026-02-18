@@ -164,7 +164,7 @@ export default function Page() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="grid gap-x-5 gap-y-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-6 md:px-32 lg:px-64">
+              className="grid gap-x-5 gap-y-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-6 md:px-32 lg:px-64 mb-20 md:mb-25">
 
               <MotionSkillCard
                 variants={items}
@@ -221,6 +221,34 @@ export default function Page() {
                 heading="AI Intergration"
                 skills="OpenAI, prompt engineering"
               />
+            </motion.div>
+
+            <motion.div
+              variants={container}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="flex col-span-2 md:col-span-4 mx-20 justify-between px-6 md:px-32 lg:px-64"
+            >
+              <motion.span variants={items} className="flex flex-col justify-center items-center">
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">5+</h3>
+                <p className='dark:text-slate-400 text-slate-600'>Months Experience</p>
+              </motion.span>
+
+              <motion.span variants={items} className="flex flex-col justify-center items-center">
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">10+</h3>
+                <p className='dark:text-slate-400 text-slate-600'>Projects Completed</p>
+              </motion.span>
+
+              <motion.span variants={items} className="flex flex-col justify-center items-center">
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">10+</h3>
+                <p className='dark:text-slate-400 text-slate-600'>Happy Clients</p>
+              </motion.span>
+
+              <motion.span variants={items} className="flex flex-col justify-center items-center">
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">99%</h3>
+                <p className='dark:text-slate-400 text-slate-600'>Client Satisfaction</p>
+              </motion.span>
             </motion.div>
 
           </section>
