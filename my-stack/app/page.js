@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import { motion } from "framer-motion";
 import HeroBtn from "./components/HeroBtn";
-import { AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineLoading3Quarters, AiOutlineMobile, AiOutlineOpenAI, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
+import { AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMobile, AiOutlineOpenAI, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
 import SMediaIcons from "./components/SMediaIcons";
 import SkillCard from "./components/SkillCard";
 
@@ -14,6 +14,7 @@ export default function Page() {
 
   const MotionSMediaIcons = motion(SMediaIcons);
   const MotionSkillCard = motion(SkillCard);
+
 
   const container = {
     hidden: {},
@@ -57,7 +58,7 @@ export default function Page() {
                 </div>
 
                 <div className="justify-center items-center p-2">
-                  <p className="font-semibold text-center text-[3rem] md:text-[4rem] leading-10 lg:text-[6rem]">Hi, I'm <span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Egharevba Nosa</span></p>
+                  <p className="font-semibold text-center text-[3rem] md:text-[4rem] leading-10 md:leading-20 lg:text-[6rem]">Hi, I'm <span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Egharevba Nosa</span></p>
                 </div>
 
                 <div>
@@ -88,6 +89,7 @@ export default function Page() {
                   />
 
                   <motion.div
+                    key="SMediaIcons"
                     variants={container}
                     initial="hidden"
                     whileInView="show"
@@ -147,7 +149,7 @@ export default function Page() {
               </div>
 
               <div className="justify-center items-center p-2 flex flex-col gap-3">
-                <p className="font-semibold text-center text-[3rem] md:text-[3.5rem] lg:text-[4rem] leading-10  text-black dark:text-white">Skills &amp;<span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Technologies</span></p>
+                <p className="font-semibold text-center text-[3rem] md:text-[3.5rem] lg:text-[4rem] leading-10 md:leading-20  text-black dark:text-white">Skills &amp;<span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Technologies</span></p>
 
                 <p className="dark:text-slate-400 text-slate-600 text-[1rem] md:text-[1.5rem] text-center">
                   A versatile toolkit built over years of crafting digital experiences
@@ -157,6 +159,7 @@ export default function Page() {
 
             {/* The skill cards section  */}
             <motion.div
+              key="SkillCard"
               variants={container}
               initial="hidden"
               whileInView="show"
@@ -200,16 +203,16 @@ export default function Page() {
 
               <MotionSkillCard
                 variants={items}
-                icon={<AiOutlineCloud className="text-cyan-500" />}
-                heading="Cloud &amp; Dev Ops"
-                skills="AWS, Vercel, infrastructure"
+                icon={<AiOutlineBranches className="text-cyan-500" />}
+                heading="Version Control Systems"
+                skills="Git, GitHub, collaboration workflows"
               />
-              
+
               <MotionSkillCard
                 variants={items}
-                icon={<AiOutlineBranches className="text-purple-500" />}
-                heading="Version Control"
-                skills="Git, GitHub, collaboration workflows"
+                icon={<AiOutlineCloud className="text-purple-500" />}
+                heading="Cloud &amp; Dev Ops"
+                skills="AWS, Vercel, infrastructure"
               />
 
               <MotionSkillCard
