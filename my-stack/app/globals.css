@@ -71,3 +71,8 @@ body {
   background-image: linear-gradient(to right, transparent,  rgb(4, 223, 243), transparent);
   
 }
+
+.line2 {
+  background-image: linear-gradient(to right, transparent,  rgb(243, 2, 223), transparent);
+  
+}

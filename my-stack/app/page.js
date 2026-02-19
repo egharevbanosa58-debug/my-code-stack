@@ -228,29 +228,47 @@ export default function Page() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="flex col-span-2 md:col-span-4 mx-20 justify-between px-6 md:px-32 lg:px-64"
+              className="grid gap-8 md:gap-4 grid-cols-2 md:grid-cols-4 md:mx-20 justify-between px-6 md:px-40 lg:px-64 pb-42"
             >
               <motion.span variants={items} className="flex flex-col justify-center items-center">
-                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">5+</h3>
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">5+</h3>
                 <p className='dark:text-slate-400 text-slate-600'>Months Experience</p>
               </motion.span>
 
               <motion.span variants={items} className="flex flex-col justify-center items-center">
-                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">10+</h3>
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">10+</h3>
                 <p className='dark:text-slate-400 text-slate-600'>Projects Completed</p>
               </motion.span>
 
               <motion.span variants={items} className="flex flex-col justify-center items-center">
-                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">10+</h3>
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">10+</h3>
                 <p className='dark:text-slate-400 text-slate-600'>Happy Clients</p>
               </motion.span>
 
               <motion.span variants={items} className="flex flex-col justify-center items-center">
-                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold">99%</h3>
+                <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">99%</h3>
                 <p className='dark:text-slate-400 text-slate-600'>Client Satisfaction</p>
               </motion.span>
             </motion.div>
+          </section>
 
+          {/* Projects Section */}
+          <section id="project" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40">
+            <div className="line2 w-full h-0.5" />
+
+            <div className="text-white py-24 px-6 md:px-20 lg:px-50">
+              <div className="mx-auto mt-32 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
+                <p className="dark:text-purple-500 text-purple-500">Portfolio</p>
+              </div>
+
+              <div className="justify-center items-center p-2 flex flex-col gap-3">
+                <p className="font-semibold text-center text-[3rem] md:text-[3.5rem] lg:text-[4rem] leading-10 md:leading-20  text-black dark:text-white">Featured<span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Projects</span></p>
+
+                <p className="dark:text-slate-400 text-slate-600 text-[1rem] md:text-[1.5rem] text-center">
+                  A selection of projects that showcase my passion for creating impactful digital solutions
+                </p>
+              </div>
+            </div>
           </section>
         </main>
       </motion.div>

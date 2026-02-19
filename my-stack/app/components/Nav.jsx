@@ -3,12 +3,32 @@ import { FiMenu, FiMoon } from "react-icons/fi";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 import HeroBtn from "./HeroBtn";
+import { useEffect, useState } from "react";
 
 export default function Nav() {
+    const [isScroll, setIsScroll] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Check if the user scrolled 50px up
+            if (window.scrollY > 50) {
+                setIsScroll(true);
+            } else {
+                setIsScroll(false);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+
+        
+    }, [])
+
     return (
         <>
             <motion.nav
-                className="flex justify-between items-center mb-auto px-6 py-4"
+                className={`flex ${isScroll ? "bg-slate-50 dark:bg-neutral-900/10 backdrop-blur-2xl border border-slate-400/20" : "" } justify-between items-center mb-auto px-6 py-4 w-full fixed top-0 left-0`}
                 initial={{ translateY: -50 }}
                 animate={{ translateY: 0 }}
                 transition={{
