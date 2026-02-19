@@ -269,6 +269,24 @@ export default function Page() {
                 </p>
               </div>
             </div>
+
+            {/* The Project Card Section */}
+            <div>
+              <div>
+                <img src="#" alt="#" aria-label="" />
+              </div>
+
+              <div>
+                <h2></h2>
+                <p></p>
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+            </div>
+            {/* End of project Card Section */}
+            
           </section>
         </main>
       </motion.div>
