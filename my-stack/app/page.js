@@ -7,6 +7,7 @@ import HeroBtn from "./components/HeroBtn";
 import { AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMobile, AiOutlineOpenAI, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
 import SMediaIcons from "./components/SMediaIcons";
 import SkillCard from "./components/SkillCard";
+import { FiArrowUpRight } from "react-icons/fi";
 
 
 export default function Page() {
@@ -271,18 +272,43 @@ export default function Page() {
             </div>
 
             {/* The Project Card Section */}
-            <div>
-              <div>
-                <img src="/NewsLite.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade" />
+            <div className="px-32 pb-32 grid grid-cols-1 lg:grid-cols-2">
+              {/* NewsLite News Aggrergator */}
+              <div className="max-w-150 flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80">
+                <div>
+                  <img src="/NewsLite.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade rounded-4xl" />
+                </div>
+
+                <div className="px-4">
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">NewsLite News Aggregator <span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-lg">Your go-to app for the latest news updates.</p>
+                </div>
+
+                <div className="px-4 flex gap-3">
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">TailwindCSS</span>
+                </div>
               </div>
 
-              <div>
-                <h2 className="flex"></h2>
-                <p></p>
-              </div>
+              {/* Task Tracker Web Application */}
+              <div className="max-w-150 h-fit flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80">
+                <div>
+                  <img src="/TaskManagerLogo.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade rounded-4xl w-full" />
+                </div>
 
-              <div>
-                <span></span>
+                <div className="px-4">
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-lg">A digital tool designed to help individuals organize, prioritize, and monitor their work in one centralized location.</p>
+                </div>
+
+                <div className="px-4 flex gap-3">
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">TailwindCSS</span>
+                </div>
               </div>
             </div>
             {/* End of project Card Section */}
