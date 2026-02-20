@@ -273,11 +273,11 @@ export default function Page() {
             {/* The Project Card Section */}
             <div>
               <div>
-                <img src="#" alt="#" aria-label="" />
+                <img src="/NewsLite.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade" />
               </div>
 
               <div>
-                <h2></h2>
+                <h2 className="flex"></h2>
                 <p></p>
               </div>
 
@@ -286,7 +286,7 @@ export default function Page() {
               </div>
             </div>
             {/* End of project Card Section */}
-            
+
           </section>
         </main>
       </motion.div>

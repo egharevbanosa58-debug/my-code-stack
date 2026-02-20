@@ -74,5 +74,9 @@ body {
 
 .line2 {
   background-image: linear-gradient(to right, transparent,  rgb(243, 2, 223), transparent);
-  
+}
+
+
+.fade {
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
