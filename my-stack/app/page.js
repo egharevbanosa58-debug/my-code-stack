@@ -254,7 +254,7 @@ export default function Page() {
           </section>
 
           {/* Projects Section */}
-          <section id="project" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40">
+          <section id="project" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 mb-20 md:pb-25">
             <div className="line2 w-full h-0.5" />
 
             <div className="text-white py-24 px-6 md:px-20 lg:px-50">
@@ -272,11 +272,11 @@ export default function Page() {
             </div>
 
             {/* The Project Card Section */}
-            <div className="px-32 pb-32 grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid gap-x-5 gap-y-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-6 md:px-32 lg:px-64 mb-20 md:mb-25">
               {/* NewsLite News Aggrergator */}
-              <div className="max-w-150 flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80">
+              <div className="w-170 m-auto flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80">
                 <div>
-                  <img src="/NewsLite.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade rounded-4xl" />
+                  <img src="/codes_Capture.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade rounded-4xl w-full object-cover" />
                 </div>
 
                 <div className="px-4">
@@ -284,7 +284,7 @@ export default function Page() {
                   <p className="dark:text-slate-400 text-slate-600 text-lg">Your go-to app for the latest news updates.</p>
                 </div>
 
-                <div className="px-4 flex gap-3">
+                <div className="px-4 flex gap-3 flex-wrap">
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
@@ -293,17 +293,36 @@ export default function Page() {
               </div>
 
               {/* Task Tracker Web Application */}
-              <div className="max-w-150 h-fit flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80">
+              <div className="w-170 m-auto flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80">
                 <div>
-                  <img src="/TaskManagerLogo.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade rounded-4xl w-full" />
+                  <img src="/TaskManagerLogo.png" alt="Task Manager Picture" aria-label="A Little file logo indicating that task manager" className="fade rounded-4xl w-full object-cover" />
                 </div>
 
                 <div className="px-4">
                   <h2 className="flex items-center justify-between font-semibold text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
-                  <p className="dark:text-slate-400 text-slate-600 text-lg">A digital tool designed to help individuals organize, prioritize, and monitor their work in one centralized location.</p>
+                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A digital tool designed to help individuals organize, </p>
                 </div>
 
-                <div className="px-4 flex gap-3">
+                <div className="px-4 flex gap-3 flex-wrap">
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">TailwindCSS</span>
+                </div>
+              </div>
+
+              {/* A Random PLaceholder */}
+              <div className="w-170 m-auto flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80">
+                <div>
+                  <img src="/TaskManagerLogo.png" alt="Task Manager Picture" aria-label="A Little file logo indicating that task manager" className="fade rounded-4xl w-full object-cover" />
+                </div>
+
+                <div className="px-4">
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A digital tool designed to help individuals organize</p>
+                </div>
+
+                <div className="px-4 flex gap-3 flex-wrap">
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
@@ -313,6 +332,11 @@ export default function Page() {
             </div>
             {/* End of project Card Section */}
 
+          </section>
+
+          {/* About me Section */}
+          <section id="about" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 mb-20 md:pb-25">
+            <div className="line w-full h-0.5" />
           </section>
         </main>
       </motion.div>
