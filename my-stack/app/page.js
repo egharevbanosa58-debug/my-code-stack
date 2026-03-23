@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import { motion } from "framer-motion";
 import HeroBtn from "./components/HeroBtn";
-import { AiFillTrophy, AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineDownload, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMobile, AiOutlineOpenAI, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
+import { AiFillTrophy, AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineDownload, AiOutlineEnvironment, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMail, AiOutlineMobile, AiOutlineOpenAI, AiOutlinePhone, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
 import SMediaIcons from "./components/SMediaIcons";
 import SkillCard from "./components/SkillCard";
 import { FiArrowUpRight, FiCoffee, FiUser } from "react-icons/fi";
 import { FaBolt } from "react-icons/fa";
+import ContactDiv from "./components/ContactDiv";
 
 
 export default function Page() {
@@ -408,6 +409,54 @@ export default function Page() {
                 </div>
               </div>
 
+            </div>
+          </section>
+
+          {/* The Contact me Section */}
+          <section id="contact" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-32">
+          <div className="line2 w-full h-0.5" />
+
+          <div className="text-white py-24 px-6 md:px-20 lg:px-50">
+              <div className="mx-auto mt-32 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
+                <p className="dark:text-cyan-500 text-cyan-500">Get In Touch</p>
+              </div>
+
+              <div className="justify-center items-center p-2 flex flex-col gap-3">
+                <p className="font-semibold text-center text-[3rem] md:text-[3.5rem] lg:text-[4rem] leading-10 md:leading-20  text-black dark:text-white">Let's<span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Collaborate</span></p>
+
+                <p className="dark:text-slate-400 text-slate-600 text-[1rem] md:text-[1.5rem] text-center">
+                  Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-6">
+              {/* Contact Info */}
+              <div>
+                <h2>Contact Information</h2>
+                <p>Feel free to reach out through any of these channels. I typically respond within 24 hours and am always excited to discuss new opportunities.</p>
+
+                <div>
+                  <ContactDiv 
+                    icon={<AiOutlineMail />}
+                    type="Email"
+                    typetext="egharevbanosa58@gmail.com"
+                  />
+                  <ContactDiv 
+                    icon={<AiOutlineEnvironment />}
+                    type="Location"
+                    typetext="Rivers State, Nigeria"
+                  />
+                  <ContactDiv 
+                    icon={<AiOutlinePhone />}
+                    type="Phone"
+                    typetext="+234 (0) 810 847 2920"
+                  />
+                </div>
+              </div>
+
+              {/* GIT Form */}
+              <div></div>
             </div>
           </section>
         </main>
