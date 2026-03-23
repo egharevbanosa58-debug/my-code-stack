@@ -28,7 +28,7 @@ export default function Nav() {
     return (
         <>
             <motion.nav
-                className={`flex ${isScroll ? "bg-slate-50 dark:bg-neutral-900/10 backdrop-blur-2xl border border-slate-400/20" : "" } justify-between items-center mb-auto px-6 py-4 w-full fixed top-0 left-0`}
+                className={`flex z-99 ${isScroll ? "bg-slate-50 dark:bg-neutral-900/10 backdrop-blur-2xl border border-slate-400/20" : "" } justify-between items-center mb-auto px-6 py-4 w-full fixed top-0 left-0`}
                 initial={{ translateY: -50 }}
                 animate={{ translateY: 0 }}
                 transition={{

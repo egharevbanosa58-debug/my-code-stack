@@ -6,7 +6,8 @@ export default function HeroBtn(
         bgGradient,
         darkBgColor,
         lightBgColor,
-        width
+        width,
+        icon
 
     }
 ) {
