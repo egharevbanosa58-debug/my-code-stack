@@ -4,14 +4,14 @@ export default function ContactDiv({
     typetext,
 }) {
     return(
-        <div className="flex flex-row items-center">
-            <span className="h-8 w-8 text-cyan-500">
+        <div className="flex flex-row items-center md:w-[70%] gap-3 p-4 border-2 border-slate-400/20 dark:bg-neutral-900/80 rounded-xl">
+            <span className="h-12 w-12 text-cyan-500 dark:bg-[#162232] bg-[#ebecf0e1] rounded-xl items-center flex text-2xl p-2.5 font-bold">
                 {icon}
             </span>
 
-            <span className="flex flex-col items-center">
+            <span className="flex flex-col items-start md:text-lg">
                 <p className="dark:text-slate-400 text-slate-600">{type}</p>
-                <p className="text-white dark:text-black">{typetext}</p>
+                <p className="text-black dark:text-white">{typetext}</p>
             </span>
         </div>
     );

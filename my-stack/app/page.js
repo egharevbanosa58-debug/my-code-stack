@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import { motion } from "framer-motion";
 import HeroBtn from "./components/HeroBtn";
-import { AiFillTrophy, AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineDownload, AiOutlineEnvironment, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMail, AiOutlineMobile, AiOutlineOpenAI, AiOutlinePhone, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
+import { AiFillTrophy, AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineDownload, AiOutlineEnvironment, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMail, AiOutlineMobile, AiOutlineOpenAI, AiOutlinePhone, AiOutlineSend, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
 import SMediaIcons from "./components/SMediaIcons";
 import SkillCard from "./components/SkillCard";
 import { FiArrowUpRight, FiCoffee, FiUser } from "react-icons/fi";
@@ -17,6 +17,30 @@ export default function Page() {
 
   const MotionSMediaIcons = motion(SMediaIcons);
   const MotionSkillCard = motion(SkillCard);
+
+  // The Section that handles the contact form
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const form = e.target;
+    const data = new FormData(form);
+
+    const res = await fetch('https://formspree.io/f/mjkpqone', {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'applcation/json',
+        'Accept': 'application/json'
+      } 
+    });
+
+    if (res.ok){
+      alert("Message sent Scuuessfully");
+      form.reset();
+    } else{
+      alert("Oops! Something went wrong")
+    }
+  }
+  // End of the contact form section
 
 
   const container = {
@@ -372,7 +396,7 @@ export default function Page() {
                   <div>
                     <div className="flex flex-col justify-center items-center p-2 md:p-4 lg:p-6 rounded-2xl border-2 border-slate-400/20 bg-white dark:bg-neutral-900/80">
                       <span className='flex md:h-16 md:w-16 h-12 w-12 rounded-xl items-center justify-center text-center text-2xl md:text-4xl'>
-                        <AiFillTrophy className="text-cyan-500"/>
+                        <AiFillTrophy className="text-cyan-500" />
                       </span>
                       <h2 className='text-2xl font-bold text-black dark:text-white text-center'>12+</h2>
                       <p className='dark:text-slate-400 text-slate-600 text-center'>Award-winning designs</p>
@@ -382,7 +406,7 @@ export default function Page() {
                   <div>
                     <div className="flex flex-col justify-center items-center p-2 md:p-4 lg:p-6 rounded-2xl border-2 border-slate-400/20 bg-white dark:bg-neutral-900/80">
                       <span className='flex md:h-16 md:w-16 h-12 w-12 rounded-xl items-center justify-center text-center text-2xl md:text-4xl'>
-                        <FaBolt className="text-cyan-500"/>
+                        <FaBolt className="text-cyan-500" />
                       </span>
                       <h2 className='text-2xl font-bold text-black dark:text-white text-center'>30K+</h2>
                       <p className='dark:text-slate-400 text-slate-600 text-center'>Lines of Code</p>
@@ -392,7 +416,7 @@ export default function Page() {
                   <div>
                     <div className="flex flex-col justify-center items-center p-2 md:p-4 lg:p-6 rounded-2xl border-2 border-slate-400/20 bg-white dark:bg-neutral-900/80">
                       <span className='flex md:h-16 md:w-16 h-12 w-12 rounded-xl items-center justify-center text-center text-2xl md:text-4xl'>
-                        <FiCoffee className="text-cyan-500"/>
+                        <FiCoffee className="text-cyan-500" />
                       </span>
                       <h2 className='text-2xl font-bold text-black dark:text-white text-center'>300+</h2>
                       <p className='dark:text-slate-400 text-slate-600 text-center'>Cups of Digital Coffee</p>
@@ -403,7 +427,7 @@ export default function Page() {
                 {/* The Download Resume button */}
                 <div>
                   <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-full md:max-w-64 rounded-r-full rounded-l-full border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 mt-5 justify-center">
-                  <AiOutlineDownload className="h-6 w-6 font-bold"/>
+                    <AiOutlineDownload className="h-6 w-6 font-bold" />
                     Download Résume
                   </button>
                 </div>
@@ -414,9 +438,9 @@ export default function Page() {
 
           {/* The Contact me Section */}
           <section id="contact" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-32">
-          <div className="line2 w-full h-0.5" />
+            <div className="line2 w-full h-0.5" />
 
-          <div className="text-white py-24 px-6 md:px-20 lg:px-50">
+            <div className="text-white py-24 px-6 md:px-20 lg:px-50">
               <div className="mx-auto mt-32 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
                 <p className="dark:text-cyan-500 text-cyan-500">Get In Touch</p>
               </div>
@@ -430,33 +454,75 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex flex-col md:flex-row gap-5 px-12 md:px-50">
               {/* Contact Info */}
-              <div>
-                <h2>Contact Information</h2>
-                <p>Feel free to reach out through any of these channels. I typically respond within 24 hours and am always excited to discuss new opportunities.</p>
+              <div className="flex-1 flex flex-col gap-5">
+                <h2 className="font-bold text-3xl">Contact Information</h2>
+                <p className="dark:text-slate-400 text-slate-600 md:w-[70%]">Feel free to reach out through any of these channels. I typically respond within 24 hours and am always excited to discuss new opportunities.</p>
 
-                <div>
-                  <ContactDiv 
+                <div className="flex flex-col gap-5">
+                  <ContactDiv
                     icon={<AiOutlineMail />}
                     type="Email"
                     typetext="egharevbanosa58@gmail.com"
                   />
-                  <ContactDiv 
+                  <ContactDiv
                     icon={<AiOutlineEnvironment />}
                     type="Location"
                     typetext="Rivers State, Nigeria"
                   />
-                  <ContactDiv 
-                    icon={<AiOutlinePhone />}
+                  <ContactDiv
+                    icon={<AiOutlinePhone className="rotate-90"/>}
                     type="Phone"
                     typetext="+234 (0) 810 847 2920"
                   />
                 </div>
+
+                <div className="flex flex-row gap-2 ml-5 items-center">
+                  <span className="inline w-2 h-2 md:w-3 md:h-3 animate-ping rounded-full bg-green-500 "></span>
+                  <p className="dark:text-slate-400 text-slate-600 text-sm md:text-lg">Available for freelance projects starting <span className="text-black dark:text-white">March 2026</span></p>
+                </div>
+
               </div>
 
               {/* GIT Form */}
-              <div></div>
+              <form className="flex flex-1 flex-col gap-4" onSubmit={handleSubmit}>
+                <span className="flex flex-col gap-2">
+                  <label htmlFor="name">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name..."
+                    className="md:w-[70%] px-3 py-4 dark:bg-neutral-900/80 rounded-xl border-2 border-slate-400/20 focus:outline-none"
+                  />
+                </span>
+
+                <span className="flex flex-col gap-2">
+                  <label htmlFor="email">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    id="email"
+                    className="md:w-[70%] px-3 py-4 dark:bg-neutral-900/80 rounded-xl border-2 border-slate-400/20 focus:outline-none"
+                  />
+                </span>
+
+                <span className="flex flex-col gap-2">
+                  <label htmlFor="message">Your Message</label>
+                  <textarea className="md:w-[70%]   px-3 py-4 dark:bg-neutral-900/80 rounded-xl border-2 border-slate-400/20 resize-none focus:outline-none" placeholder="Tell Me About Your Project..." name="message"></textarea>
+                </span>
+
+                <div>
+                  <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-[100%] md:w-[70%] rounded-2xl border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 md:gap-3 mt-5 justify-center">
+                    <AiOutlineSend className="h-6 w-6 font-bold -rotate-45" />
+                    Send Message
+                  </button>
+
+                  {/* Remember to add a voice note feature */}
+                </div>
+              </form>
             </div>
           </section>
         </main>
