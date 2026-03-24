@@ -203,6 +203,7 @@ export default function Page() {
                 icon={<AiOutlineHtml5 className="text-cyan-500" />}
                 heading="Frontend Development"
                 skills="HTML5, CSS3, React, Next.js, with pixel-perfect precision"
+                shadow="#00FFFF"
               />
 
               <MotionSkillCard
@@ -210,7 +211,7 @@ export default function Page() {
                 icon={<AiOutlineDatabase className="text-pink-500" />}
                 heading="Backend Development"
                 skills="Django, Django REST Framework, Python, PostgreSQL, REST APIs"
-              />
+                />
 
               <MotionSkillCard
                 variants={items}
@@ -432,7 +433,7 @@ export default function Page() {
                 {/* The Download Resume button */}
                 <div>
                   <a href="/Egharevba Nosakhare.pdf" download="Egharevba_Nosakhare_resume.pdf">
-                    <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-full md:max-w-64 rounded-r-full rounded-l-full border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 mt-5 justify-center">
+                    <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-full md:max-w-64 rounded-r-full rounded-l-full hover:shadow-[0_0_40px_#00e1ff4d] transition-all duration-400 border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 mt-5 justify-center">
                       <AiOutlineDownload className="h-6 w-6 font-bold" />
                       Download Résume
                     </button>
@@ -522,7 +523,7 @@ export default function Page() {
                 </span>
 
                 <div>
-                  <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-[100%] md:w-[70%] rounded-2xl border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 md:gap-3 mt-5 justify-center" disabled={loading}>
+                  <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] hover:shadow-[0_0_30px_#00e1ff4d] transition-all duration-400 w-full md:w-[70%] rounded-2xl border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 md:gap-3 mt-5 justify-center" disabled={loading}>
                     {loading && (
                       // <FaSpinner className="animate-spin dark:text-slate-400 text-slate-600"/>
                       <span className="inline-block border-2 border-white font-bold dark:border-black border-t-transparent rounded-full h-5 w-5 animate-spin"></span>

@@ -8,7 +8,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'glow': '0 0 20px var(--glow-color)',
+      }
+    },
   },
   plugins: [],
 };
