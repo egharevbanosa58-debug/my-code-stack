@@ -8,13 +8,13 @@ import { AiFillTrophy, AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiO
 import SMediaIcons from "./components/SMediaIcons";
 import SkillCard from "./components/SkillCard";
 import { FiArrowUpRight, FiCoffee, FiUser } from "react-icons/fi";
-import { FaBolt } from "react-icons/fa";
+import { FaBolt, FaSpinner } from "react-icons/fa";
 import ContactDiv from "./components/ContactDiv";
 
 
 export default function Page() {
   const [mounted, setMounted] = useState(false);
-  
+  const [ loading, setLoading ] = useState(false);
 
   const MotionSMediaIcons = motion(SMediaIcons);
   const MotionSkillCard = motion(SkillCard);
@@ -26,7 +26,7 @@ export default function Page() {
     const data = new FormData(form);
     const payload = Object.fromEntries(data)
     
-
+    setLoading(true);
     const res = await fetch('https://formspree.io/f/mjkpqone', {
       method: "POST",
       body: JSON.stringify(payload),
@@ -38,6 +38,7 @@ export default function Page() {
 
     if (res.ok){
       alert("Message sent Scuuessfully");
+      setLoading(false);
       form.reset();
     } else{
       alert("Oops! Something went wrong")
@@ -519,7 +520,13 @@ export default function Page() {
 
                 <div>
                   <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-[100%] md:w-[70%] rounded-2xl border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 md:gap-3 mt-5 justify-center">
-                    <AiOutlineSend className="h-6 w-6 font-bold -rotate-45" />
+                    {loading && (
+                      // <FaSpinner className="animate-spin dark:text-slate-400 text-slate-600"/>
+                      <span className="inline-block border-2 border-white dark:border-black border-t-transparent rounded-full h-5 w-5 animate-spin"></span>
+                    )}
+                    {!loading && (
+                      <AiOutlineSend className="h-6 w-6 font-bold -rotate-45" />
+                    )}
                     Send Message
                   </button>
 
