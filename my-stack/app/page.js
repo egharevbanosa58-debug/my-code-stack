@@ -14,7 +14,7 @@ import ContactDiv from "./components/ContactDiv";
 
 export default function Page() {
   const [mounted, setMounted] = useState(false);
-  const [ loading, setLoading ] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const MotionSMediaIcons = motion(SMediaIcons);
   const MotionSkillCard = motion(SkillCard);
@@ -25,7 +25,7 @@ export default function Page() {
     const form = e.target;
     const data = new FormData(form);
     const payload = Object.fromEntries(data)
-    
+
     setLoading(true);
     const res = await fetch('https://formspree.io/f/mjkpqone', {
       method: "POST",
@@ -33,14 +33,14 @@ export default function Page() {
       headers: {
         'Content-Type': 'applcation/json',
         'Accept': 'application/json'
-      } 
+      }
     });
 
-    if (res.ok){
+    if (res.ok) {
       alert("Message sent Scuuessfully");
       setLoading(false);
       form.reset();
-    } else{
+    } else {
       alert("Oops! Something went wrong")
       setLoading(false);
     }
@@ -431,10 +431,12 @@ export default function Page() {
 
                 {/* The Download Resume button */}
                 <div>
-                  <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-full md:max-w-64 rounded-r-full rounded-l-full border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 mt-5 justify-center">
-                    <AiOutlineDownload className="h-6 w-6 font-bold" />
-                    Download Résume
-                  </button>
+                  <a href="/Egharevba Nosakhare.pdf" download="Egharevba_Nosakhare_resume.pdf">
+                    <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-full md:max-w-64 rounded-r-full rounded-l-full border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 mt-5 justify-center">
+                      <AiOutlineDownload className="h-6 w-6 font-bold" />
+                      Download Résume
+                    </button>
+                  </a>
                 </div>
               </div>
 
@@ -477,7 +479,7 @@ export default function Page() {
                     typetext="Rivers State, Nigeria"
                   />
                   <ContactDiv
-                    icon={<AiOutlinePhone className="rotate-90"/>}
+                    icon={<AiOutlinePhone className="rotate-90" />}
                     type="Phone"
                     typetext="+234 (0) 810 847 2920"
                   />
