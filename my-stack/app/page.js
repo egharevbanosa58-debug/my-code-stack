@@ -42,6 +42,7 @@ export default function Page() {
       form.reset();
     } else{
       alert("Oops! Something went wrong")
+      setLoading(false);
     }
   }
   // End of the contact form section
@@ -519,10 +520,10 @@ export default function Page() {
                 </span>
 
                 <div>
-                  <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-[100%] md:w-[70%] rounded-2xl border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 md:gap-3 mt-5 justify-center">
+                  <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-[100%] md:w-[70%] rounded-2xl border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 md:gap-3 mt-5 justify-center" disabled={loading}>
                     {loading && (
                       // <FaSpinner className="animate-spin dark:text-slate-400 text-slate-600"/>
-                      <span className="inline-block border-2 border-white dark:border-black border-t-transparent rounded-full h-5 w-5 animate-spin"></span>
+                      <span className="inline-block border-2 border-white font-bold dark:border-black border-t-transparent rounded-full h-5 w-5 animate-spin"></span>
                     )}
                     {!loading && (
                       <AiOutlineSend className="h-6 w-6 font-bold -rotate-45" />
