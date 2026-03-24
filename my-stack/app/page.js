@@ -14,6 +14,7 @@ import ContactDiv from "./components/ContactDiv";
 
 export default function Page() {
   const [mounted, setMounted] = useState(false);
+  
 
   const MotionSMediaIcons = motion(SMediaIcons);
   const MotionSkillCard = motion(SkillCard);
@@ -23,10 +24,12 @@ export default function Page() {
     e.preventDefault()
     const form = e.target;
     const data = new FormData(form);
+    const payload = Object.fromEntries(data)
+    
 
     const res = await fetch('https://formspree.io/f/mjkpqone', {
       method: "POST",
-      body: JSON.stringify(data),
+      body: JSON.stringify(payload),
       headers: {
         'Content-Type': 'applcation/json',
         'Accept': 'application/json'
