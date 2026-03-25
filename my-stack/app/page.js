@@ -203,7 +203,8 @@ export default function Page() {
                 icon={<AiOutlineHtml5 className="text-cyan-500" />}
                 heading="Frontend Development"
                 skills="HTML5, CSS3, React, Next.js, with pixel-perfect precision"
-                shadow="#00FFFF"
+                borderColor="border-cyan-500"
+                shadow="#06b6d4"
               />
 
               <MotionSkillCard
@@ -211,6 +212,8 @@ export default function Page() {
                 icon={<AiOutlineDatabase className="text-pink-500" />}
                 heading="Backend Development"
                 skills="Django, Django REST Framework, Python, PostgreSQL, REST APIs"
+                borderColor="border-pink-500"
+                shadow="#ec4899"
                 />
 
               <MotionSkillCard
@@ -218,6 +221,8 @@ export default function Page() {
                 icon={<AiOutlineFormatPainter className="text-cyan-500" />}
                 heading="UI/UX Design"
                 skills="Figma, Framer, motion design, design systems"
+                borderColor="border-cyan-500"
+                shadow="#06b6d4"
               />
 
               <MotionSkillCard
@@ -225,6 +230,8 @@ export default function Page() {
                 icon={<AiOutlineGlobal className="text-purple-500" />}
                 heading="Web Performance"
                 skills="Core Web Vitals, SEO optimization, accessibility"
+                borderColor="border-purple-500"
+                shadow="#a855f7"
               />
 
               <MotionSkillCard
@@ -232,6 +239,8 @@ export default function Page() {
                 icon={<AiOutlineMobile className="text-pink-500" />}
                 heading="Mobile Development"
                 skills="React Native, responsive design"
+                borderColor="border-pink-500"
+                shadow="#ec4899"
               />
 
               <MotionSkillCard
@@ -239,6 +248,8 @@ export default function Page() {
                 icon={<AiOutlineBranches className="text-cyan-500" />}
                 heading="Version Control Systems"
                 skills="Git, GitHub, collaboration workflows"
+                borderColor="border-cyan-500"
+                shadow="#06b6d4"
               />
 
               <MotionSkillCard
@@ -246,6 +257,8 @@ export default function Page() {
                 icon={<AiOutlineCloud className="text-purple-500" />}
                 heading="Cloud &amp; Dev Ops"
                 skills="AWS, Vercel, infrastructure"
+                borderColor="border-purple-500"
+                shadow="#a855f7"
               />
 
               <MotionSkillCard
@@ -253,6 +266,8 @@ export default function Page() {
                 icon={<AiOutlineOpenAI className="text-cyan-500" />}
                 heading="AI Intergration"
                 skills="OpenAI, prompt engineering"
+                borderColor="border-cyan-500"
+                shadow="#06b6d4"
               />
             </motion.div>
 
