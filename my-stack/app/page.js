@@ -119,7 +119,7 @@ export default function Page() {
                       width="w-full"
                       darkText="dark:text-white text-xl font-semibold"
                       lightText="text-black text-xl"
-                      darkBgColor="dark:bg-slate-900 dark:border-slate-700"
+                      darkBgColor="dark:bg-slate-900 dark:border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300"
                       lightBgColor="bg-white border border-stone-300"
                     />
                   </a>
