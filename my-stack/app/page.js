@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import { motion } from "framer-motion";
 import HeroBtn from "./components/HeroBtn";
-import { AiFillTrophy, AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineDownload, AiOutlineEnvironment, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMail, AiOutlineMobile, AiOutlineOpenAI, AiOutlinePhone, AiOutlineSend, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
+import { AiFillTrophy, AiOutlineBranches, AiOutlineCloud, AiOutlineDatabase, AiOutlineDownload, AiOutlineEnvironment, AiOutlineFormatPainter, AiOutlineGithub, AiOutlineGitlab, AiOutlineGlobal, AiOutlineHtml5, AiOutlineInstagram, AiOutlineMail, AiOutlineMobile, AiOutlineOpenAI, AiOutlinePhone, AiOutlineSend, AiOutlineWhatsApp, AiOutlineX, AiOutlineYoutube } from "react-icons/ai";
 import SMediaIcons from "./components/SMediaIcons";
 import SkillCard from "./components/SkillCard";
 import { FiArrowUpRight, FiCoffee, FiUser } from "react-icons/fi";
@@ -139,6 +139,7 @@ export default function Page() {
                       lightText="text-slate-600"
                       lightBgColor="bg-white"
                       darkBgColor="dark:bg-slate-900"
+                      url="https://www.github.com/egharevbanosa58-debug"
                     />
 
                     <MotionSMediaIcons
@@ -148,6 +149,7 @@ export default function Page() {
                       lightText="text-slate-600"
                       lightBgColor="bg-white"
                       darkBgColor="dark:bg-slate-900"
+                      url="https://www.x.com"
                     />
 
                     <MotionSMediaIcons
@@ -157,15 +159,17 @@ export default function Page() {
                       lightText="text-slate-600"
                       lightBgColor="bg-white"
                       darkBgColor="dark:bg-slate-900"
+                      url="https://www.instagram.com/mcke_ys"
                     />
 
                     <MotionSMediaIcons
                       variants={items}
-                      text={<AiOutlineYoutube className="w-6 h-6" />}
+                      text={<AiOutlineWhatsApp className="w-6 h-6" />}
                       darkText="dark:text-slate-500 border dark:border-slate-500/40"
                       lightText="text-slate-600"
                       lightBgColor="bg-white"
                       darkBgColor="dark:bg-slate-900"
+                      url="https://wa.me/2348108472920"
                     />
                   </motion.div>
                 </div>
