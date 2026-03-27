@@ -22,13 +22,13 @@ export default function Nav() {
 
         return () => window.removeEventListener('scroll', handleScroll);
 
-        
+
     }, [])
 
     return (
         <>
             <motion.nav
-                className={`flex z-99 ${isScroll ? "bg-slate-50 dark:bg-neutral-900/10 backdrop-blur-2xl border border-slate-400/20" : "" } justify-between items-center mb-auto px-6 py-4 w-full fixed top-0 left-0`}
+                className={`flex z-99 ${isScroll ? "bg-slate-50 dark:bg-neutral-900/10 backdrop-blur-2xl border border-slate-400/20" : ""} justify-between items-center mb-auto px-6 py-4 w-full fixed top-0 left-0`}
                 initial={{ translateY: -50 }}
                 animate={{ translateY: 0 }}
                 transition={{
@@ -37,7 +37,9 @@ export default function Nav() {
                 }}
             >
                 {/* Logo */}
-                <Logo />
+                <a href="#first">
+                    <Logo />
+                </a>
 
                 <div className="flex items-center gap-4">
                     <div>
@@ -46,13 +48,17 @@ export default function Nav() {
                     </div>
 
                     <div>
-                        <HeroBtn
-                            text="Hire me"
-                            width="max-w-64"
-                            darkText="dark:text-black text-xl font-semibold hidden md:flex"
-                            lightText="text-white text-xl"
-                            bgGradient="bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d]"
-                        />
+                        {/* Lets change the style of the button to go transparent with a rotating gradient border like google AI */}
+                        <a href="#contact">
+                            <HeroBtn
+                                text="Hire me"
+                                width="max-w-64"
+                                darkText="dark:text-black text-xl font-semibold hidden md:flex"
+                                lightText="text-white text-xl"
+                                bgGradient="bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d]"
+                                extra="hover:shadow-[0_0_40px_#00e1ff4d] transition-all duration-300"
+                            />
+                        </a>
                     </div>
 
                     <div className="">

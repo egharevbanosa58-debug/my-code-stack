@@ -7,14 +7,13 @@ export default function HeroBtn(
         darkBgColor,
         lightBgColor,
         width,
-        icon
-
+        extra,
     }
 ) {
     return (
         <>
             <button
-                className={`${lightText} ${darkText} ${bgGradient} ${darkBgColor} ${lightBgColor} ${width} rounded-r-full rounded-l-full border border-slate-400/20 px-4 py-3 cursor-pointer`}
+                className={`${lightText} ${darkText} ${bgGradient} ${darkBgColor} ${lightBgColor} ${width} rounded-r-full rounded-l-full border border-slate-400/20 px-4 py-3 cursor-pointer ${extra}`}
             >
                 {text}
             </button>

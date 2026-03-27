@@ -73,7 +73,7 @@ export default function Page() {
         <Nav />
 
         <main>
-          <section>
+          <section id="first">
             <div>
               <motion.div animate={{ x: -200 }} transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", ease: "easeInOut", }} viewport={{ once: true }} className="-z-1 absolute dark:top-40 top-50 right-5 h-80 w-80 bg-sky-500/30 rounded-full shadow-lg blur-3xl m-auto"></motion.div>
 
@@ -103,22 +103,26 @@ export default function Page() {
                 </div>
 
                 <div className="mx-auto flex flex-col justify-center px-22 gap-6">
-                  <HeroBtn
-                    text="View My Work"
-                    width="max-w-64"
-                    darkText="dark:text-black text-xl font-semibold"
-                    lightText="text-white text-xl"
-                    bgGradient="bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d]"
-                  />
+                  <a href="#project" className="flex">
+                    <HeroBtn
+                      text="View My Work"
+                      width="w-full"
+                      darkText="dark:text-black text-xl font-semibold"
+                      lightText="text-white text-xl"
+                      bgGradient="bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d]"
+                    />
+                  </a>
 
-                  <HeroBtn
-                    text="Get in Touch"
-                    width="max-w-62"
-                    darkText="dark:text-white text-xl font-semibold"
-                    lightText="text-black text-xl"
-                    darkBgColor="dark:bg-slate-900 dark:border-slate-700"
-                    lightBgColor="bg-white border border-stone-300"
-                  />
+                  <a href="#contact">
+                    <HeroBtn
+                      text="Get in Touch"
+                      width="w-full"
+                      darkText="dark:text-white text-xl font-semibold"
+                      lightText="text-black text-xl"
+                      darkBgColor="dark:bg-slate-900 dark:border-slate-700"
+                      lightBgColor="bg-white border border-stone-300"
+                    />
+                  </a>
 
                   <motion.div
                     key="SMediaIcons"
@@ -214,7 +218,7 @@ export default function Page() {
                 skills="Django, Django REST Framework, Python, PostgreSQL, REST APIs"
                 borderColor="border-pink-500"
                 shadow="#ec4899"
-                />
+              />
 
               <MotionSkillCard
                 variants={items}
