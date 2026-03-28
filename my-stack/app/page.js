@@ -327,11 +327,11 @@ export default function Page() {
             </div>
 
             {/* The Project Card Section */}
-            <div className="grid gap-x-5 gap-y-7 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-6 md:px-32 lg:px-64">
+            <div className="grid gap-x-10 gap-y-8 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-6 md:px-32 lg:px-64">
               {/* NewsLite News Aggrergator */}
-              <div className="lg:w-170 m-auto flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
                 <div>
-                  <img src="/codes_Capture.png" alt="NewsLite Logo" aria-label="The Blue and white NewsLite Logo" className="fade rounded-4xl w-full object-cover" />
+                  <img src="/NewsLite newsAgg.png" alt="NewsLite News Aggregator" aria-label="The Blue and white NewsLite Home page" className="fade rounded-t-4xl object-cover aspect-video w-full" />
                 </div>
 
                 <div className="px-4">
@@ -348,9 +348,9 @@ export default function Page() {
               </div>
 
               {/* Task Tracker Web Application */}
-              <div className="w-full lg:w-170 m-auto flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
                 <div>
-                  <img src="/TaskManagerLogo.png" alt="Task Manager Picture" aria-label="A Little file logo indicating that task manager" className="fade rounded-4xl w-full object-cover" />
+                  <img src="/TaskManagerLogo.png" alt="Task Manager Picture" aria-label="A Little file logo indicating that task manager" className="fade rounded-t-4xl w-full object-cover aspect-video" />
                 </div>
 
                 <div className="px-4">
@@ -367,21 +367,38 @@ export default function Page() {
               </div>
 
               {/* A Random PLaceholder */}
-              <div className="w-full lg:w-170 m-auto flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
                 <div>
-                  <img src="/TaskManagerLogo.png" alt="Task Manager Picture" aria-label="A Little file logo indicating that task manager" className="fade rounded-4xl w-full object-cover" />
+                  <img src="/Marvel studio.png" alt="Marvel Studio" aria-label="A pic showing the text - Marvel Studio" className="fade rounded-t-4xl w-full object-cover aspect-video" />
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
-                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A digital tool designed to help individuals organize</p>
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">Marvel Studio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">London-based creative agency crafting modern minimalist brand identities.</p>
                 </div>
 
                 <div className="px-4 flex gap-3 flex-wrap">
-                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
-                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">HTML</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">CSS</span>
+                </div>
+              </div>
+
+              {/* The Bootstrap Portfolio */}
+              <div className="max-h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+                <div>
+                  <img src="/NosaPortfolioCapture.png" alt="Nosa.s Bootstrap Portfolio" aria-label="A picture showing the text - Nosa's Portfolio" className="fade rounded-t-4xl w-full object-cover aspect-video" />
+                </div>
+
+                <div className="px-4">
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">Marvel Studio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A fully responsive site designed by Nosa and released
+on 2025-11-02</p>
+                </div>
+
+                <div className="px-4 flex gap-3 flex-wrap">
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">HTML</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">CSS</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
-                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">TailwindCSS</span>
                 </div>
               </div>
             </div>
