@@ -328,8 +328,9 @@ export default function Page() {
 
             {/* The Project Card Section */}
             <div className="grid gap-x-10 gap-y-8 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-6 md:px-32 lg:px-64">
+
               {/* NewsLite News Aggrergator */}
-              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
                 <div>
                   <img src="/NewsLite newsAgg.png" alt="NewsLite News Aggregator" aria-label="The Blue and white NewsLite Home page" className="fade rounded-t-4xl object-cover aspect-video w-full" />
                 </div>
@@ -348,7 +349,7 @@ export default function Page() {
               </div>
 
               {/* Task Tracker Web Application */}
-              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
                 <div>
                   <img src="/TaskManagerLogo.png" alt="Task Manager Picture" aria-label="A Little file logo indicating that task manager" className="fade rounded-t-4xl w-full object-cover aspect-video" />
                 </div>
@@ -366,8 +367,8 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* A Random PLaceholder */}
-              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+              {/* Marvel Studios */}
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
                 <div>
                   <img src="/Marvel studio.png" alt="Marvel Studio" aria-label="A pic showing the text - Marvel Studio" className="fade rounded-t-4xl w-full object-cover aspect-video" />
                 </div>
@@ -384,7 +385,7 @@ export default function Page() {
               </div>
 
               {/* The Bootstrap Portfolio */}
-              <div className="max-h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border">
+              <div className="max-h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
                 <div>
                   <img src="/NosaPortfolioCapture.png" alt="Nosa.s Bootstrap Portfolio" aria-label="A picture showing the text - Nosa's Portfolio" className="fade rounded-t-4xl w-full object-cover aspect-video" />
                 </div>
