@@ -408,10 +408,10 @@ on 2025-11-02</p>
           </section>
 
           {/* About me Section */}
-          <section id="about" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-32">
+          <section id="about" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-24">
             <div className="line4 w-full h-0.5" />
 
-            <div className="flex flex-col lg:flex-row my-10 mt-20 px-10 md:px-32 lg:px-64 gap-20 items-center">
+            <div className="flex flex-col lg:flex-row my-10 mt-26 px-10 md:px-32 lg:px-64 gap-20 items-center">
 
               {/* The Image of Nosa */}
               <div className="w-full flex flex-col flex-1 relative">
@@ -490,7 +490,7 @@ on 2025-11-02</p>
             <div className="line3 w-full h-0.5" />
 
             <div className="text-white py-24 px-6 md:px-20 lg:px-50">
-              <div className="mx-auto mt-32 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
+              <div className="mx-auto mt-10 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
                 <p className="dark:text-cyan-500 text-cyan-500">Get In Touch</p>
               </div>
 
