@@ -82,7 +82,7 @@ body {
 }
 
 .line3 {
-  background-image: linear-gradient(to right, transparent,  #ffffff, transparent);
+  background-image: linear-gradient(to right, transparent,  #d0cdd2e5, transparent);
 }
 
 .line4 {
@@ -93,3 +93,6 @@ body {
 .fade {
   mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
+
+/* #ffffff33 grey tint */
+/* #94a3b833 slate 400/20 */
