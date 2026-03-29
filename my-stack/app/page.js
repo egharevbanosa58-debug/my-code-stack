@@ -10,6 +10,7 @@ import SkillCard from "./components/SkillCard";
 import { FiArrowUpRight, FiCoffee, FiUser } from "react-icons/fi";
 import { FaBolt, FaSpinner } from "react-icons/fa";
 import ContactDiv from "./components/ContactDiv";
+import Btt from "./components/Btt";
 
 
 export default function Page() {
@@ -71,6 +72,7 @@ export default function Page() {
         className="relative overflow-hidden"
       >
         <Nav />
+        <Btt />
 
         <main>
           <section id="first">
