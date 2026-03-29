@@ -439,14 +439,14 @@ on 2025-11-02</p>
                 </div>
 
                 {/* The Little badge-like things in the about me section */}
-                <div className="flex gap-x-5">
+                <div className="flex gap-x-2.5 md:gap-x-5">
                   <div>
                     <div className="flex flex-col justify-center items-center p-2 md:p-4 lg:p-6 rounded-2xl border-2 border-slate-400/20 bg-white dark:bg-neutral-900/80">
                       <span className='flex md:h-16 md:w-16 h-12 w-12 rounded-xl items-center justify-center text-center text-2xl md:text-4xl'>
                         <AiFillTrophy className="text-cyan-500" />
                       </span>
                       <h2 className='text-xl md:text-2xl font-bold text-black dark:text-white text-center'>12+</h2>
-                      <p className='dark:text-slate-400 text-slate-600 text-center'>Award-winning designs</p>
+                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm'>Award-winning designs</p>
                     </div>
                   </div>
 
@@ -456,7 +456,7 @@ on 2025-11-02</p>
                         <FaBolt className="text-cyan-500" />
                       </span>
                       <h2 className='textt-xl md:text-2xl font-bold text-black dark:text-white text-center'>30K+</h2>
-                      <p className='dark:text-slate-400 text-slate-600 text-center'>Lines of Code</p>
+                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm'>Lines of Code</p>
                     </div>
                   </div>
 
@@ -466,7 +466,7 @@ on 2025-11-02</p>
                         <FiCoffee className="text-cyan-500" />
                       </span>
                       <h2 className='text-xl md:text-2xl font-bold text-black dark:text-white text-center'>300+</h2>
-                      <p className='dark:text-slate-400 text-slate-600 text-center'>Cups of Digital Coffee</p>
+                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm'>Cups of Digital Coffee</p>
                     </div>
                   </div>
                 </div>
