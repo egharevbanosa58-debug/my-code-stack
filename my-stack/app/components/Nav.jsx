@@ -31,7 +31,7 @@ export default function Nav() {
     return (
         <>
             <motion.nav
-                className={`flex z-99 ${isScroll ? "bg-slate-50 dark:bg-neutral-900/10 backdrop-blur-2xl border-b border-b-slate-400/20 overflow-hidden" : ""} justify-between items-center mb-auto px-6 py-4 w-full fixed top-0 left-0`}
+                className={`flex z-99 ${isScroll ? "bg-slate-50 dark:bg-neutral-900/10 backdrop-blur-2xl border-b border-b-slate-400/20" : ""} justify-between items-center mb-auto px-6 py-4 w-full fixed top-0 left-0`}
                 initial={{ translateY: -50 }}
                 animate={{ translateY: 0 }}
                 transition={{
@@ -78,7 +78,7 @@ export default function Nav() {
 
                         {isOpen ? <button onClick={() => setIsOpen(!isOpen)}><FiX className="text-xl md:hidden" /></button> : <button onClick={() => setIsOpen(!isOpen)}><FiMenu className="text-xl md:hidden" /></button>}
 
-                        <div className={`${isOpen ? "flex" : "hidden"} flex flex-col gap-5 absolute p-5 -translate-x-60 translate-y-5 rounded-xl border-2 border-slate-400/20 bg-white dark:bg-neutral-900/80 w-64`}>
+                        <div className={`${isOpen ? "flex z-100" : "hidden"} flex flex-col gap-5 absolute p-5 -translate-x-60 translate-y-5 rounded-xl border-2 border-slate-400/20 bg-white dark:bg-neutral-900/80 w-64`}>
                             <a href="#first" className="">Home</a>
                             <a href="#skills" className="">Skills</a>
                             <a href="#project" className="">Projects</a>
