@@ -90,25 +90,25 @@ export default function Page() {
                 </div>
 
                 <div className="justify-center items-center p-2">
-                  <p className="font-semibold text-center text-[3rem] md:text-[4rem] leading-10 md:leading-20 lg:text-[6rem]">Hi, I'm <span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Egharevba Nosa</span></p>
+                  <p className="font-bold text-center text-[3rem] md:text-[4rem] leading-10 md:leading-20 lg:text-[6rem]">Hi, I'm <span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Egharevba Nosa</span></p>
                 </div>
 
                 <div>
-                  <p className="dark:text-slate-400 text-slate-600 text-[1.2rem] md:text-[1.5rem] text-center">
+                  <p className="dark:text-slate-400 text-slate-600 text-[1rem] md:text-[1.5rem] text-center">
                     A <span className="text-[#00e1ff]">Full-Stack Developer</span> crafting beautiful, performant digital
                   </p>
-                  <p className="dark:text-slate-400 text-slate-600 text-[1.2rem] md:text-[1.5rem] text-center">
+                  <p className="dark:text-slate-400 text-slate-600 text-[1rem] md:text-[1.5rem] text-center">
                     experiences that push boundaries
                   </p>
                 </div>
 
-                <div className="mx-auto flex flex-col justify-center px-22 gap-6">
+                <div className="mx-auto flex flex-col justify-center gap-4 items-center">
                   <a href="#project" className="flex">
                     <HeroBtn
                       text="View My Work"
                       width="w-full"
-                      darkText="dark:text-black text-xl font-semibold"
-                      lightText="text-white text-xl"
+                      darkText="dark:text-black text-lg font-semibold"
+                      lightText="text-white text-lg"
                       bgGradient="bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d]"
                     />
                   </a>
@@ -117,8 +117,8 @@ export default function Page() {
                     <HeroBtn
                       text="Get in Touch"
                       width="w-full"
-                      darkText="dark:text-white text-xl font-semibold"
-                      lightText="text-black text-xl"
+                      darkText="dark:text-white text-lg font-semibold"
+                      lightText="text-black text-lg"
                       darkBgColor="dark:bg-slate-900 dark:border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300"
                       lightBgColor="bg-white border border-stone-300"
                     />
