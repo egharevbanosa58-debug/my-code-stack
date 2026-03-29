@@ -336,11 +336,11 @@ export default function Page() {
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">NewsLite News Aggregator <span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://newslitenews.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
-                  <p className="dark:text-slate-400 text-slate-600 text-lg">Your go-to app for the latest news updates.</p>
+                  <h2 className="flex items-center justify-between font-semibold text-xl md:text-2xl">NewsLite News Aggregator <span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://newslitenews.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-base md:text-lg">Your go-to app for the latest news updates.</p>
                 </div>
 
-                <div className="px-4 flex gap-3 flex-wrap">
+                <div className="px-4 flex gap-3 flex-wrap text-base">
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
@@ -355,11 +355,11 @@ export default function Page() {
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://task-tracker-app-green.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
-                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A digital tool designed to help individuals organize, </p>
+                  <h2 className="flex items-center justify-between font-semibold text-xl md:text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://task-tracker-app-green.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-base md:text-lg flex-wrap">A digital tool designed to help individuals organize, </p>
                 </div>
 
-                <div className="px-4 flex gap-3 flex-wrap">
+                <div className="px-4 flex gap-3 flex-wrap text-base">
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
@@ -374,11 +374,11 @@ export default function Page() {
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">Marvel Studio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://marvel-orpin.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
-                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">London-based creative agency crafting modern minimalist brand identities.</p>
+                  <h2 className="flex items-center justify-between font-semibold text-xl md:text-2xl">Marvel Studio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://marvel-orpin.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-base md:text-lg flex-wrap">London-based creative agency crafting modern minimalist brand identities.</p>
                 </div>
 
-                <div className="px-4 flex gap-3 flex-wrap">
+                <div className="px-4 flex gap-3 flex-wrap text-base">
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">HTML</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">CSS</span>
                 </div>
@@ -391,12 +391,12 @@ export default function Page() {
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">Nosa's portfolio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://my-portfolio-phi-orcin-13.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
-                  <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A fully responsive site designed by Nosa and released
+                  <h2 className="flex items-center justify-between font-semibold text-xl md:text-2xl">Nosa's portfolio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://my-portfolio-phi-orcin-13.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-base md:text-lg flex-wrap">A fully responsive site designed by Nosa and released
 on 2025-11-02</p>
                 </div>
 
-                <div className="px-4 flex gap-3 flex-wrap">
+                <div className="px-4 flex gap-3 flex-wrap text-base">
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">HTML</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">CSS</span>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
