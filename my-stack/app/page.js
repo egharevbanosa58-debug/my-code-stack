@@ -445,7 +445,7 @@ on 2025-11-02</p>
                       <span className='flex md:h-16 md:w-16 h-12 w-12 rounded-xl items-center justify-center text-center text-2xl md:text-4xl'>
                         <AiFillTrophy className="text-cyan-500" />
                       </span>
-                      <h2 className='text-2xl font-bold text-black dark:text-white text-center'>12+</h2>
+                      <h2 className='text-xl md:text-2xl font-bold text-black dark:text-white text-center'>12+</h2>
                       <p className='dark:text-slate-400 text-slate-600 text-center'>Award-winning designs</p>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ on 2025-11-02</p>
                       <span className='flex md:h-16 md:w-16 h-12 w-12 rounded-xl items-center justify-center text-center text-2xl md:text-4xl'>
                         <FaBolt className="text-cyan-500" />
                       </span>
-                      <h2 className='text-2xl font-bold text-black dark:text-white text-center'>30K+</h2>
+                      <h2 className='textt-xl md:text-2xl font-bold text-black dark:text-white text-center'>30K+</h2>
                       <p className='dark:text-slate-400 text-slate-600 text-center'>Lines of Code</p>
                     </div>
                   </div>
@@ -465,7 +465,7 @@ on 2025-11-02</p>
                       <span className='flex md:h-16 md:w-16 h-12 w-12 rounded-xl items-center justify-center text-center text-2xl md:text-4xl'>
                         <FiCoffee className="text-cyan-500" />
                       </span>
-                      <h2 className='text-2xl font-bold text-black dark:text-white text-center'>300+</h2>
+                      <h2 className='text-xl md:text-2xl font-bold text-black dark:text-white text-center'>300+</h2>
                       <p className='dark:text-slate-400 text-slate-600 text-center'>Cups of Digital Coffee</p>
                     </div>
                   </div>
