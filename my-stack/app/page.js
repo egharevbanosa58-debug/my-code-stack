@@ -288,22 +288,22 @@ export default function Page() {
             >
               <motion.span variants={items} className="flex flex-col justify-center items-center">
                 <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">5+</h3>
-                <p className='dark:text-slate-400 text-slate-600'>Months Experience</p>
+                <p className='dark:text-slate-400 text-slate-600 text-center'>Months Experience</p>
               </motion.span>
 
               <motion.span variants={items} className="flex flex-col justify-center items-center">
                 <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">10+</h3>
-                <p className='dark:text-slate-400 text-slate-600'>Projects Completed</p>
+                <p className='dark:text-slate-400 text-slate-600 text-center'>Projects Completed</p>
               </motion.span>
 
               <motion.span variants={items} className="flex flex-col justify-center items-center">
                 <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">10+</h3>
-                <p className='dark:text-slate-400 text-slate-600'>Happy Clients</p>
+                <p className='dark:text-slate-400 text-slate-600 text-center'>Happy Clients</p>
               </motion.span>
 
               <motion.span variants={items} className="flex flex-col justify-center items-center">
                 <h3 className="bg-linear-120 from-purple-500 to-pink-500 bg-clip-text text-transparent text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-bold">99%</h3>
-                <p className='dark:text-slate-400 text-slate-600'>Client Satisfaction</p>
+                <p className='dark:text-slate-400 text-slate-600 text-center'>Client Satisfaction</p>
               </motion.span>
             </motion.div>
           </section>
