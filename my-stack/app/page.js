@@ -446,7 +446,7 @@ on 2025-11-02</p>
                         <AiFillTrophy className="text-cyan-500" />
                       </span>
                       <h2 className='text-xl md:text-2xl font-bold text-black dark:text-white text-center'>12+</h2>
-                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm'>Award-winning designs</p>
+                      <p className='dark:text-slate-400 text-slate-600 text-center md:text-lg text-sm'>Award-winning designs</p>
                     </div>
                   </div>
 
@@ -456,7 +456,7 @@ on 2025-11-02</p>
                         <FaBolt className="text-cyan-500" />
                       </span>
                       <h2 className='textt-xl md:text-2xl font-bold text-black dark:text-white text-center'>30K+</h2>
-                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm'>Lines of Code</p>
+                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm md:text-lg'>Lines of Code</p>
                     </div>
                   </div>
 
@@ -466,7 +466,7 @@ on 2025-11-02</p>
                         <FiCoffee className="text-cyan-500" />
                       </span>
                       <h2 className='text-xl md:text-2xl font-bold text-black dark:text-white text-center'>300+</h2>
-                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm'>Cups of Digital Coffee</p>
+                      <p className='dark:text-slate-400 text-slate-600 text-center text-sm md:text-lg'>Cups of Digital Coffee</p>
                     </div>
                   </div>
                 </div>
@@ -506,8 +506,8 @@ on 2025-11-02</p>
             <div className="flex flex-col md:flex-row gap-5 px-5 md:px-50">
               {/* Contact Info */}
               <div className="flex-1 flex flex-col gap-5">
-                <h2 className="font-bold text-3xl text-center">Contact Information</h2>
-                <p className="dark:text-slate-400 text-slate-600 md:w-[70%] text-center">Feel free to reach out through any of these channels. I typically respond within 24 hours and am always excited to discuss new opportunities.</p>
+                <h2 className="font-bold text-3xl md:text-start text-center">Contact Information</h2>
+                <p className="dark:text-slate-400 text-slate-600 md:w-[70%] md:text-start text-center">Feel free to reach out through any of these channels. I typically respond within 24 hours and am always excited to discuss new opportunities.</p>
 
                 <div className="flex flex-col gap-5">
                   <ContactDiv
