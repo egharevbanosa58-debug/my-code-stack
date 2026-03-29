@@ -72,7 +72,7 @@ export default function Page() {
         className="relative overflow-hidden"
       >
         <Nav />
-        <Btt />
+        <a href="#first"><Btt /></a>
 
         <main>
           <section id="first">
