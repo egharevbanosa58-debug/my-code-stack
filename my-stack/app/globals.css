@@ -81,6 +81,14 @@ body {
   background-image: linear-gradient(to right, transparent,  rgb(243, 2, 223), transparent);
 }
 
+.line3 {
+  background-image: linear-gradient(to right, transparent,  #ffffff, transparent);
+}
+
+.line4 {
+  background-image: linear-gradient(to right, transparent,  rgb(179, 2, 243), transparent);
+}
+
 
 .fade {
   mask-image: linear-gradient(to bottom, black 60%, transparent 100%);

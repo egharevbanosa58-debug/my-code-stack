@@ -313,7 +313,7 @@ export default function Page() {
             <div className="line2 w-full h-0.5" />
 
             <div className="text-white py-24 px-6 md:px-20 lg:px-50">
-              <div className="mx-auto mt-32 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
+              <div className="mx-auto mt-24 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
                 <p className="dark:text-purple-500 text-purple-500">Portfolio</p>
               </div>
 
@@ -336,7 +336,7 @@ export default function Page() {
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">NewsLite News Aggregator <span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">NewsLite News Aggregator <span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://newslitenews.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
                   <p className="dark:text-slate-400 text-slate-600 text-lg">Your go-to app for the latest news updates.</p>
                 </div>
 
@@ -355,7 +355,7 @@ export default function Page() {
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">Task Tracker<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://task-tracker-app-green.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
                   <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A digital tool designed to help individuals organize, </p>
                 </div>
 
@@ -374,7 +374,7 @@ export default function Page() {
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">Marvel Studio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">Marvel Studio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://marvel-orpin.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
                   <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">London-based creative agency crafting modern minimalist brand identities.</p>
                 </div>
 
@@ -387,11 +387,11 @@ export default function Page() {
               {/* The Bootstrap Portfolio */}
               <div className="max-h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
                 <div>
-                  <img src="/NosaPortfolioCapture.png" alt="Nosa.s Bootstrap Portfolio" aria-label="A picture showing the text - Nosa's Portfolio" className="fade rounded-t-4xl w-full object-cover aspect-video" />
+                  <img src="/NosaPortfolioCapture.png" alt="Nosa's Bootstrap Portfolio" aria-label="A picture showing the text - Nosa's Portfolio" className="fade rounded-t-4xl w-full object-cover aspect-video" />
                 </div>
 
                 <div className="px-4">
-                  <h2 className="flex items-center justify-between font-semibold text-2xl">Marvel Studio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><FiArrowUpRight /></span></h2>
+                  <h2 className="flex items-center justify-between font-semibold text-2xl">Nosa's portfolio<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://my-portfolio-phi-orcin-13.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
                   <p className="dark:text-slate-400 text-slate-600 text-lg flex-wrap">A fully responsive site designed by Nosa and released
 on 2025-11-02</p>
                 </div>
@@ -409,9 +409,9 @@ on 2025-11-02</p>
 
           {/* About me Section */}
           <section id="about" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-32">
-            <div className="line2 w-full h-0.5" />
+            <div className="line4 w-full h-0.5" />
 
-            <div className="flex flex-col lg:flex-row my-10 px-10 md:px-32 lg:px-64 gap-20 items-center">
+            <div className="flex flex-col lg:flex-row my-10 mt-20 px-10 md:px-32 lg:px-64 gap-20 items-center">
 
               {/* The Image of Nosa */}
               <div className="w-full flex flex-col flex-1 relative">
@@ -487,7 +487,7 @@ on 2025-11-02</p>
 
           {/* The Contact me Section */}
           <section id="contact" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-32">
-            <div className="line2 w-full h-0.5" />
+            <div className="line3 w-full h-0.5" />
 
             <div className="text-white py-24 px-6 md:px-20 lg:px-50">
               <div className="mx-auto mt-32 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
