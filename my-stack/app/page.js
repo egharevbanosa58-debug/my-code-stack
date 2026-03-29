@@ -408,7 +408,7 @@ on 2025-11-02</p>
           </section>
 
           {/* About me Section */}
-          <section id="about" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-24">
+          <section id="about" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-18">
             <div className="line4 w-full h-0.5" />
 
             <div className="flex flex-col lg:flex-row my-10 mt-26 px-10 md:px-32 lg:px-64 gap-20 items-center">
@@ -489,7 +489,7 @@ on 2025-11-02</p>
           <section id="contact" className="z-20 h-fit bg-slate-50 dark:bg-neutral-900/40 pb-32">
             <div className="line3 w-full h-0.5" />
 
-            <div className="text-white py-24 px-6 md:px-20 lg:px-50">
+            <div className="text-white py-15 px-6 md:px-20 lg:px-50">
               <div className="mx-auto mt-10 flex md:py-2.5 py-1.5 w-fit md:px-5 px-3.5 justify-center items-center gap-2 border dark:bg-slate-900/70 bg-white border-slate-400/20 rounded-r-full rounded-l-full">
                 <p className="dark:text-cyan-500 text-cyan-500">Get In Touch</p>
               </div>
@@ -503,11 +503,11 @@ on 2025-11-02</p>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-5 px-12 md:px-50">
+            <div className="flex flex-col md:flex-row gap-5 px-5 md:px-50">
               {/* Contact Info */}
               <div className="flex-1 flex flex-col gap-5">
-                <h2 className="font-bold text-3xl">Contact Information</h2>
-                <p className="dark:text-slate-400 text-slate-600 md:w-[70%]">Feel free to reach out through any of these channels. I typically respond within 24 hours and am always excited to discuss new opportunities.</p>
+                <h2 className="font-bold text-3xl text-center">Contact Information</h2>
+                <p className="dark:text-slate-400 text-slate-600 md:w-[70%] text-center">Feel free to reach out through any of these channels. I typically respond within 24 hours and am always excited to discuss new opportunities.</p>
 
                 <div className="flex flex-col gap-5">
                   <ContactDiv
