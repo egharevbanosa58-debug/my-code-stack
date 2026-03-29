@@ -427,7 +427,7 @@ on 2025-11-02</p>
                 </div>
 
                 <div className="items-center p-2 flex flex-col gap-3">
-                  <p className="font-semibold text-[2.7rem] md:text-[3.5rem] lg:text-[4rem] leading-10 md:leading-20 text-black dark:text-white">Crafting Digital &amp;<span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Experiences</span></p>
+                  <p className="font-semibold text-[2.2rem] md:text-[3.5rem] lg:text-[4rem] leading-8 md:leading-20 text-black dark:text-white">Crafting Digital &amp;<span className="inline-flex bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Experiences</span></p>
 
                   <p className="dark:text-slate-400 text-slate-600 text-[1rem] md:text-[1.5rem]">
                     I'm a passionate full-stack developer with over 5 years of experience building exceptional digital products. My journey began with a curiosity for how things work on the web, and it has evolved into a career dedicated to creating impactful user experiences.
