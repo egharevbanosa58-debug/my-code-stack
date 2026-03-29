@@ -29,9 +29,9 @@ export default function Btt() {
                 delay: 1,
                 ease: "easeIn",
             }}
-            className={`w-fit z-99 bottom-5 left-1/2 -translate-x-1/2 opacity-0  fixed text-white bg-cyan-500 flex gap-2 justify-center items-center rounded-l-full rounded-r-full px-3 py-2 transition-all duration-200 ${isScroll ? "opacity-1 -translate-y-30" : ""} `}
+            className={`w-fit z-99 bottom-5 left-1/2 -translate-x-1/2 opacity-0 group fixed text-white dark:text-black bg-linear-140 from-sky-400 to-purple-500 flex gap-2 justify-center items-center rounded-l-full rounded-r-full px-3 py-2 transition-all duration-200 ${isScroll ? "opacity-1 -translate-y-30" : ""} `}
         >
-             <FiArrowUp />
+             <FiArrowUp className="group-hover:-translate-y-1 transition-all duration-300"/>
              Back to Top
         </motion.button>
     );
