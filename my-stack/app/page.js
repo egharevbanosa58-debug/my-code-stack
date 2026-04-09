@@ -475,7 +475,7 @@ on 2025-11-02</p>
 
                 {/* The Download Resume button */}
                 <div>
-                  <a href="/Egharevba Nosakhare.pdf" download="Egharevba_Nosakhare_resume.pdf">
+                  <a href="/Egharevba_Nosakhare_FullStack_Developer_CV.pdf" download="Egharevba_Nosakhare_FullStack_Developer_CV.pdf">
                     <button className="text-white dark:text-black text-xl font-semibold bg-linear-140 from-sky-400 to-purple-500 dark:shadow-[0_0_20px_#00e1ff4d] w-full md:max-w-64 rounded-r-full rounded-l-full hover:shadow-[0_0_40px_#00e1ff4d] transition-all duration-400 border border-slate-400/20 px-4 py-3 cursor-pointer flex items-center gap-2 mt-5 justify-center">
                       <AiOutlineDownload className="h-6 w-6 font-bold" />
                       Download Résume
