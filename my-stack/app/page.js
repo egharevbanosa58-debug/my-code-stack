@@ -13,6 +13,10 @@ import ContactDiv from "./components/ContactDiv";
 import Btt from "./components/Btt";
 import Footer from "./components/Footer";
 
+// 1. Import BOTH toast and the ToastContainer
+import { toast, ToastContainer } from "react-toastify";
+// 2. Import CSS if you are on an older version and notice unstyled text
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Page() {
   const [mounted, setMounted] = useState(false);
@@ -21,32 +25,49 @@ export default function Page() {
   const MotionSMediaIcons = motion(SMediaIcons);
   const MotionSkillCard = motion(SkillCard);
 
-  // The Section that handles the contact form
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const form = e.target;
     const data = new FormData(form);
-    const payload = Object.fromEntries(data)
+    const payload = Object.fromEntries(data);
 
     setLoading(true);
-    const res = await fetch('https://formspree.io/f/mjkpqone', {
-      method: "POST",
-      body: JSON.stringify(payload),
-      headers: {
-        'Content-Type': 'applcation/json',
-        'Accept': 'application/json'
-      }
-    });
 
-    if (res.ok) {
-      alert("Message sent Scuuessfully");
-      setLoading(false);
-      form.reset();
-    } else {
-      alert("Oops! Something went wrong")
+    try {
+      const res = await fetch('https://formspree.io/f/mjkpqone', {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+          'Content-Type': 'application/json', // 🌟 Fixed typo: was 'applcation/json'
+          'Accept': 'application/json'
+        }
+      });
+
+      if (res.ok) {
+        toast.success("Message Sent Successfully!", {
+          autoClose: 3000,
+          hideProgressBar: true,
+        });
+        form.reset();
+      } else {
+        // 🌟 Triggers if Formspree receives the payload but returns a 400 or 500 error
+        toast.error("Oops! Something went wrong on the server.", {
+          autoClose: 3000,
+          hideProgressBar: true,
+        });
+      }
+    } catch (error) {
+      // 🌟 Triggers if the user is offline or the network API completely crashes
+      toast.error("Network error! Please check your connection.", {
+        autoClose: 3000,
+        hideProgressBar: true,
+      });
+    } finally {
+      // 🌟 Forces the loading state to turn off no matter what happens above
       setLoading(false);
     }
-  }
+  };
+
   // End of the contact form section
 
 
