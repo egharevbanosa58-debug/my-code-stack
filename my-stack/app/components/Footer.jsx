@@ -22,7 +22,7 @@ export default function Footer() {
     }
 
     return (
-        <div className="border-t border-slate-500 md:px-64 md:py-16">
+        <div className="border-t border-slate-500 md:px-64 md:py-16 p-5">
             <div className="flex justify-between items-center">
                 <Logo />
 
@@ -86,9 +86,10 @@ export default function Footer() {
                 </span>
 
                 
-                <a href="https://www.github.com/egharevbanosa58-debug" className="dark:text-slate-400 text-slate-600 underline">egharevbanosa58-debug</a>
+                <a href="https://www.github.com/egharevbanosa58-debug" className="hidden md:block dark:text-slate-400 text-slate-600 underline">egharevbanosa58-debug</a>
             </div>
 
+            <a href="https://www.github.com/egharevbanosa58-debug" className="block md:hidden text-center dark:text-slate-400 text-slate-600 underline">GitHub: egharevbanosa58-debug</a>
             <p className="dark:text-slate-400 text-slate-600 text-center">&copy; 2026 All Rights Reserved</p>
             <p className="dark:text-slate-400 text-slate-600 text-center">Made by NOSA&trade;</p>
         </div>
