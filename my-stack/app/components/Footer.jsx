@@ -24,7 +24,7 @@ export default function Footer() {
     return (
         <div className="border-t border-slate-500 md:px-64 md:py-16 p-5">
             <div className="flex justify-between items-center">
-                <Logo />
+                <Logo/>
 
                 <motion.div
                     key="SMediaIcons"
@@ -32,7 +32,7 @@ export default function Footer() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="flex flex-row gap-3 justify-center items-center"
+                    className="flex flex-row gap-2 justify-center items-center scale-75"
                 >
                     <MotionSMediaIcons
                         variants={items}
