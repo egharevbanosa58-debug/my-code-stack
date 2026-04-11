@@ -22,8 +22,59 @@ export default function Footer() {
     }
 
     return (
-        <div className="border-t border-slate-500 md:px-64">
-            <Logo />
+        <div className="border-t border-slate-500 md:px-64 md:py-16">
+            <div className="flex justify-between items-center">
+                <Logo />
+
+                <motion.div
+                    key="SMediaIcons"
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    className="flex flex-row gap-3 justify-center items-center"
+                >
+                    <MotionSMediaIcons
+                        variants={items}
+                        text={<AiOutlineGithub className="w-6 h-6" />}
+                        darkText="dark:text-slate-500"
+                        lightText="text-slate-600"
+                        lightBgColor="bg-white"
+                        darkBgColor="dark:bg-slate-900"
+                        url="https://www.github.com/egharevbanosa58-debug"
+                    />
+
+                    <MotionSMediaIcons
+                        variants={items}
+                        text={<AiOutlineX className="w-6 h-6" />}
+                        darkText="dark:text-slate-500"
+                        lightText="text-slate-600"
+                        lightBgColor="bg-white"
+                        darkBgColor="dark:bg-slate-900"
+                        url="https://www.x.com"
+                    />
+
+                    <MotionSMediaIcons
+                        variants={items}
+                        text={<AiOutlineInstagram className="w-6 h-6" />}
+                        darkText="dark:text-slate-500"
+                        lightText="text-slate-600"
+                        lightBgColor="bg-white"
+                        darkBgColor="dark:bg-slate-900"
+                        url="https://www.instagram.com/mcke_ys"
+                    />
+
+                    <MotionSMediaIcons
+                        variants={items}
+                        text={<AiOutlineWhatsApp className="w-6 h-6" />}
+                        darkText="dark:text-slate-500 border dark:border-slate-500/40"
+                        lightText="text-slate-600"
+                        lightBgColor="bg-white"
+                        darkBgColor="dark:bg-slate-900"
+                        url="https://wa.me/2348108472920"
+                    />
+                </motion.div>
+            </div>
             <div className="flex w-full justify-between p-8">
                 <span className="flex flex-col gap-1">
                     <h3 className="dark:text-slate-400 text-slate-600 font-semibold">QUICK LINKS</h3>
@@ -34,54 +85,7 @@ export default function Footer() {
                     <a href="#contact" className="dark:text-slate-400 text-slate-600 hover:underline">Contact</a>
                 </span>
 
-                <motion.div
-                    key="SMediaIcons"
-                    variants={container}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true }}
-                    className="flex flex-row gap-3 justify-center items-center"
-                  >
-                    <MotionSMediaIcons
-                      variants={items}
-                      text={<AiOutlineGithub className="w-6 h-6" />}
-                      darkText="dark:text-slate-500"
-                      lightText="text-slate-600"
-                      lightBgColor="bg-white"
-                      darkBgColor="dark:bg-slate-900"
-                      url="https://www.github.com/egharevbanosa58-debug"
-                    />
-
-                    <MotionSMediaIcons
-                      variants={items}
-                      text={<AiOutlineX className="w-6 h-6" />}
-                      darkText="dark:text-slate-500"
-                      lightText="text-slate-600"
-                      lightBgColor="bg-white"
-                      darkBgColor="dark:bg-slate-900"
-                      url="https://www.x.com"
-                    />
-
-                    <MotionSMediaIcons
-                      variants={items}
-                      text={<AiOutlineInstagram className="w-6 h-6" />}
-                      darkText="dark:text-slate-500"
-                      lightText="text-slate-600"
-                      lightBgColor="bg-white"
-                      darkBgColor="dark:bg-slate-900"
-                      url="https://www.instagram.com/mcke_ys"
-                    />
-
-                    <MotionSMediaIcons
-                      variants={items}
-                      text={<AiOutlineWhatsApp className="w-6 h-6" />}
-                      darkText="dark:text-slate-500 border dark:border-slate-500/40"
-                      lightText="text-slate-600"
-                      lightBgColor="bg-white"
-                      darkBgColor="dark:bg-slate-900"
-                      url="https://wa.me/2348108472920"
-                    />
-                  </motion.div>
+                
                 <a href="https://www.github.com/egharevbanosa58-debug" className="dark:text-slate-400 text-slate-600 underline">egharevbanosa58-debug</a>
             </div>
 
