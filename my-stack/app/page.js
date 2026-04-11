@@ -11,6 +11,7 @@ import { FiArrowUpRight, FiCoffee, FiUser } from "react-icons/fi";
 import { FaBolt, FaSpinner } from "react-icons/fa";
 import ContactDiv from "./components/ContactDiv";
 import Btt from "./components/Btt";
+import Footer from "./components/Footer";
 
 
 export default function Page() {
@@ -584,6 +585,9 @@ on 2025-11-02</p>
             </div>
           </section>
         </main>
+
+        {/* Footer */}
+        <Footer />
       </motion.div>
     </>
   );
