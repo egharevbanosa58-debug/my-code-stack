@@ -22,12 +22,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head><meta name="google-site-verification" content="Kk5vSEjBvDnyy9uV-ToRRSxgZaZ5i_KgxtY2MalsMj0" /></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-500`}
       >
         <Providers>
           <Analytics />
-          <ToastContainer/>  
+          <ToastContainer />
           {children}
         </Providers>
       </body>
