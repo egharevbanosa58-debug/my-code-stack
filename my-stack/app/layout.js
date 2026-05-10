@@ -15,8 +15,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "My Code Stack",
-  description: "A NOSA Production",
+  title: "Nosa Egharevba | Full Stack Developer Nigeria",
+  description:
+    "Full Stack Developer skilled in React, Next.js, Django, and modern web technologies. Explore projects, portfolio work, and development services by Nosa Egharevba.",
+  keywords: [
+    "Full Stack Developer Nigeria",
+    "React Developer",
+    "Next.js Developer",
+    "Frontend Developer Nigeria",
+    "Web Developer Portfolio",
+    "Django Developer",
+  ],
+  openGraph: {
+    title: "Nosa Egharevba | Full Stack Developer",
+    description:
+      "Portfolio of Nosa Egharevba showcasing React, Next.js, and full stack development projects.",
+    url: "https://nosa-stack.vercel.app",
+    siteName: "Nosa Stack",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
