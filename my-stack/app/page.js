@@ -228,7 +228,7 @@ export default function Page() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="grid gap-x-5 gap-y-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-6 md:px-32 lg:px-64 mb-20 md:mb-25">
+              className="grid gap-x-5 gap-y-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-stretch px-6 md:px-32 lg:px-64 mb-20 md:mb-25">
 
               <MotionSkillCard
                 variants={items}
