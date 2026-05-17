@@ -426,6 +426,25 @@ on 2025-11-02</p>
                   <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
                 </div>
               </div>
+
+              {/* Anasemi Security Services */}
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
+                <div>
+                  <img src="/anasemi-sec-pic.png" alt="Anasemi Security Services Picture" aria-label="A Little file logo indicating that anasemi security services" className="fade rounded-t-4xl w-full object-cover aspect-video" />
+                </div>
+
+                <div className="px-4">
+                  <h2 className="flex items-center justify-between font-semibold text-xl md:text-2xl">Anasemi Security Services<span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://anasemisecurity.com" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-base md:text-lg flex-wrap">Expert facility protection, guarding services, and safety drills for corporate and residential clients across Abuja. </p>
+                </div>
+
+                <div className="px-4 flex gap-3 flex-wrap text-base">
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">TailwindCSS</span>
+                </div>
+              </div>
             </div>
             {/* End of project Card Section */}
 
