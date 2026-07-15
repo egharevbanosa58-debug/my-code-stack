@@ -352,6 +352,30 @@ export default function Page() {
 
             {/* The Project Card Section */}
             <div className="grid gap-x-10 gap-y-8 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-6 md:px-32 lg:px-64">
+              {/* EduNova */}
+              <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
+                <div>
+                  <img src="/edunova.png" alt="Edunova" aria-label="The Neon green landing page for edunova" className="fade rounded-t-4xl object-cover aspect-video w-full" />
+                </div>
+
+                <div className="px-4">
+                  <h2 className="flex items-center justify-between font-semibold text-xl md:text-2xl">Edunova — Revolutionize Your Learning With AI-Powered Explanations. <span className="dark:text-slate-400 text-slate-600 w-12 h-12"><a href="https://edunova-fe.vercel.app" target="_blank"><FiArrowUpRight className="active:text-cyan-500"/></a></span></h2>
+                  <p className="dark:text-slate-400 text-slate-600 text-base md:text-lg">Edunova — Revolutionize Your Learning With AI-Powered Explanations.
+
+Edunova is an innovative educational platform that leverages AI to provide personalized explanations for your learning materials. Simply upload your screenshots, and let our advanced AI analyze and break down complex concepts into easy-to-understand explanations.</p>
+                </div>
+
+                <div className="px-4 flex gap-3 flex-wrap text-base">
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">React</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Next.js</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">JavaScript</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">TailwindCSS</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Django</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">REST API</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Python</span>
+                  <span className="py-1 px-3 dark:bg-[#162232] bg-[#ebecf0e1] dark:text-slate-400 text-slate-600 rounded-full">Clerk Auth</span>
+                </div>
+              </div>
 
               {/* NewsLite News Aggrergator */}
               <div className="h-full flex flex-col gap-4 rounded-4xl pb-6 border-slate-400/20 bg-white dark:bg-neutral-900/80 border hover:border-cyan-500 hover:shadow-[0_0_20px_#06b6d44d] hover:-translate-y-2 transition-all duration-300">
