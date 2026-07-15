@@ -482,7 +482,7 @@ on 2025-11-02</p>
 
               {/* The Image of Nosa */}
               <div className="w-full flex flex-col flex-1 relative">
-                <img src="/Nosa.jpg" alt="A portrait of Nosa" className="rounded-2xl" />
+                <img src="/nosa_ai.jpeg" alt="A portrait of Nosa" className="rounded-2xl" />
                 <div className="px-4 py-2 rounded-2xl w-fit absolute -bottom-5 -right-4 dark:bg-[#162232] bg-[#ebecf0e1] border border-slate-400/20">
                   <span className="inline-flex font-semibold bg-linear-120 from-sky-400 via-purple-500 to-pink-500 bg-clip-text text-transparent cursor-pointer p-2">Open to Work</span></div>
               </div>
